@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meet Sammy Script – Auto Farm, Auto Win & Teleport Roblox 2025</title>
+  <meta name="description" content="Download working Meet Sammy scripts with Auto Farm, Auto Win, Teleport, and more features. Keyless scripts for mobile & PC executors.">
+  <meta name="author" content="Meet Sammy Community">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://meet-sammy-script.github.io/">
+  <meta property="og:title" content="Meet Sammy Script">
+  <meta property="og:description" content="Best collection of Meet Sammy scripts with Auto Farm, Auto Win, Teleport, and more. Keyless & mobile-compatible.">
+  <meta property="og:url" content="https://meet-sammy-script.github.io/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Meet Sammy Script Collection">
+  <meta name="twitter:description" content="Working scripts for Meet Sammy - Auto Farm, Auto Win, and more!">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .subnav {
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin-top:10px;
+    flex-wrap:wrap;
+  }
+  .subnav a {
+    padding:8px 14px;
+    background:linear-gradient(135deg, #FF3333 0%, #FF6666 100%);
+    color:#FFFF00;
+    text-decoration:none;
+    border-radius:10px;
+    border:3px solid #CC0000;
+    font-weight:700;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+  }
+
+  .hero {
+    max-width:1100px;
+    margin: 18px auto;
+    padding:18px;
+    text-align:left;
+  }
+  .hero h1 { font-size:2rem; margin:0 0 6px; color:#FF3333; text-shadow: 2px 2px 0 #FFFF00; }
+  .hero p { margin:6px 0; line-height:1.45; color:#2c3e50; }
+
+  .container {
+    max-width:1100px;
+    margin: 8px auto 40px;
+    padding: 0 12px;
+    display:grid;
+    gap:18px;
+    grid-template-columns: 1fr;
+  }
+
+  @media(min-width:900px){
+    .container { grid-template-columns: 1fr 360px; }
+  }
+
+  .card {
+    background: linear-gradient(180deg,#FFFFFF 0%, #FFF8DC 100%);
+    padding:14px;
+    border-radius:12px;
+    border:4px solid #FF3333;
+    box-shadow: 6px 6px 0 rgba(255, 51, 51, 0.3);
+    overflow:hidden;
+    word-wrap:break-word;
+    margin-bottom:16px;
+  }
+
+  .card h3 {
+    color:#FF3333;
+    text-shadow:2px 2px 0 rgba(255, 255, 0, 0.5);
+    margin-top:0;
+  }
+
+  .script-block {
+    background:#2c3e50;
+    color:#7ed957;
+    padding:12px;
+    border-radius:10px;
+    font-family: "Courier New", monospace;
+    font-size:0.92rem;
+    max-height:360px;
+    overflow:auto;
+    border:4px solid #FFFF00;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    -webkit-overflow-scrolling: touch;
+    word-break:break-word;
+  }
+
+  @media (max-width:420px) {
+    .script-block {
+      max-height:240px;
+      font-size:0.88rem;
+      padding:10px;
+    }
+  }
+
+  .script-actions {
+    margin-top:10px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+
+  .btn-copy, .btn-download {
+    display:inline-block;
+    padding:10px 12px;
+    border-radius:10px;
+    background:linear-gradient(135deg, #FF3333 0%, #FF6666 100%);
+    color:#FFFF00;
+    text-decoration:none;
+    border:3px solid #CC0000;
+    box-shadow:4px 4px 0 #990000;
+    font-weight:800;
+    cursor:pointer;
+    min-width:110px;
+    text-align:center;
+    text-shadow:1px 1px 0 rgba(0,0,0,0.5);
+  }
+
+  .btn-download {
+    background:linear-gradient(135deg, #FFFF00 0%, #FFFF66 100%);
+    color:#CC0000;
+    border:3px solid #CCCC00;
+    box-shadow:4px 4px 0 #999900;
+    text-shadow:1px 1px 0 rgba(255,255,255,0.3);
+  }
+
+  .small {
+    font-size:0.95rem;
+    color:#2c3e50;
+  }
+
+  #toast {
+    position: fixed;
+    left:50%;
+    transform: translateX(-50%);
+    bottom:24px;
+    background: linear-gradient(135deg, #FF3333 0%, #FF6666 100%);
+    color:#FFFF00;
+    padding:10px 16px;
+    border-radius:10px;
+    border:3px solid #CC0000;
+    display:none;
+    z-index:9999;
+    font-weight:800;
+    box-shadow:4px 4px 0 rgba(0,0,0,0.6);
+  }
+
+  body, html {
+    overflow-x: hidden;
+  }
+
+  @media (max-width:360px) {
+    .subnav a { padding:6px 10px; font-size:0.85rem; }
+    .hero h1 { font-size:1.4rem; }
+    .hero p { font-size:0.95rem; }
+    .btn-copy, .btn-download { min-width:90px; padding:8px 10px; font-size:0.9rem; }
+  }
+
+  .feature-table {
+    width:100%;
+    border-collapse:collapse;
+    margin:12px 0;
+    background:rgba(0,0,0,0.3);
+    border-radius:8px;
+    overflow:hidden;
+  }
+  
+  .feature-table th {
+    background:linear-gradient(135deg, #FF3333 0%, #FF6666 100%);
+    color:#FFFF00;
+    padding:10px;
+    text-align:left;
+    font-weight:800;
+    border-bottom:3px solid #CC0000;
+    text-shadow:1px 1px 0 rgba(0,0,0,0.5);
+  }
+  
+  .feature-table td {
+    padding:10px;
+    color:#2c3e50;
+    border-bottom:1px solid rgba(255,51,51,0.1);
+  }
+  
+  .feature-table tr:last-child td {
+    border-bottom:none;
+  }
+
+  .warning-box {
+    background:#ffe5e5;
+    border:3px solid #FF3333;
+    border-radius:10px;
+    padding:12px;
+    margin:12px 0;
+    color:#CC0000;
+    font-weight:700;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>🎩 Meet Sammy</h1>
+    <h2>Scripts & Codes Hub</h2>
+    <div class="subnav" aria-label="site links">
+      <a href="/">Scripts</a>
+      <a href="codes.html">Codes</a>
+      <a href="sites.html">All Sites</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Meet Sammy Script Collection (100% Working)</h1>
+      <p>
+        Welcome to the ultimate Meet Sammy scripts hub! Get the best and newest Roblox scripts featuring 
+        powerful automation tools like Auto Farm, Auto Win, and more. Meet Sammy is a fun and engaging 
+        Roblox experience where you can collect items, complete challenges, and compete with friends in 
+        exciting gameplay adventures.
+      </p>
+      <p>
+        Each script below is fully functional, verified, and can be copied or downloaded as a `.lua` file for easy 
+        execution on both PC and Mobile. Whether you're looking for keyless scripts, undetected features, or premium 
+        automation tools, we've got everything you need to enhance your Meet Sammy experience without any bans or issues.
+      </p>
+      <div class="warning-box">
+        ⚠️ <strong>Important:</strong> Use scripts responsibly and at your own risk. Test in private servers when 
+        possible to avoid detection. Excessive use in public servers may result in account warnings or bans. Always 
+        use trusted executors like Delta, Synapse X, KRNL, or Fluxus.
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <!-- Script 1 -->
+        <div class="card">
+          <h3>1. Meet Sammy Script – Auto Farm (Key System)</h3>
+          <p class="small">Comprehensive auto-farming script with a key system. Automatically collects items, completes tasks, and farms rewards with advanced automation features.</p>
+          <h4 style="margin-top:8px; margin-bottom:6px; color:#FF6666;">Script</h4>
+          <div class="script-block" id="script1">loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/MeetSammy"))()
+-- Key System: Get your key from the link provided in the GUI
+-- Features: Auto Farm Items, Auto Collect, Advanced Settings</div>
+          <div class="script-actions">
+            <button class="btn-copy" data-target="script1">Copy Script</button>
+            <button class="btn-download" data-target="script1" data-filename="meet_sammy_auto_farm.lua">Download .lua</button>
+          </div>
+        </div>
+
+        <!-- Script 2 -->
+        <div class="card">
+          <h3>2. Meet Sammy Script – Auto Win (Teleport Toggle)</h3>
+          <p class="small">Simple yet powerful auto-win script with toggleable teleportation. Automatically completes challenges and helps you win every round effortlessly.</p>
+          <h4 style="margin-top:8px; margin-bottom:6px; color:#FF6666;">Script</h4>
+          <div class="script-block" id="script2">loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Meet%20Sammy.lua"))()
+-- Features: Auto Win Toggle, Teleport Toggle, Easy-to-use GUI</div>
+          <div class="script-actions">
+            <button class="btn-copy" data-target="script2">Copy Script</button>
+            <button class="btn-download" data-target="script2" data-filename="meet_sammy_auto_win.lua">Download .lua</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- right sidebar -->
+      <aside>
+        <div class="card">
+          <h3>What Is Meet Sammy Script?</h3>
+          <p class="small">
+            Meet Sammy script is a powerful Lua-based automation tool designed for the engaging Roblox experience 
+            where you collect items, complete challenges, and compete with friends. These scripts enhance your gaming 
+            experience by providing powerful features like Auto Farm, Auto Win, and advanced teleportation.
+          </p>
+          <p class="small">
+            Once you activate the script using a trusted executor, it provides access to a custom GUI with automation 
+            options that eliminate repetitive grinding and maximize your efficiency. Complete challenges and collect 
+            rewards effortlessly with Meet Sammy scripts.
+          </p>
+
+          <h3 style="margin-top:16px;">Key Features</h3>
+          <table class="feature-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Auto Farm</strong></td>
+                <td>Collects items and rewards automatically.</td>
+              </tr>
+              <tr>
+                <td><strong>Auto Win</strong></td>
+                <td>Completes challenges and wins rounds instantly.</td>
+              </tr>
+              <tr>
+                <td><strong>Teleport</strong></td>
+                <td>Instantly moves to objectives and finish lines.</td>
+              </tr>
+              <tr>
+                <td><strong>Easy GUI</strong></td>
+                <td>Simple interface with toggle buttons for all features.</td>
+              </tr>
+              <tr>
+                <td><strong>Key System</strong></td>
+                <td>Secure access with key verification for premium features.</td>
+              </tr>
+              <tr>
+                <td><strong>No Ban</strong></td>
+                <td>Undetected features to keep your account safe.</td>
+              </tr>
+              <tr>
+                <td><strong>Mobile Support</strong></td>
+                <td>Works perfectly on both PC and mobile devices.</td>
+              </tr>
+              <tr>
+                <td><strong>Regular Updates</strong></td>
+                <td>Scripts updated frequently to match game changes.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card" style="margin-top:16px;">
+          <h3>How To Use Meet Sammy Scripts</h3>
+          <p class="small">
+            Using scripts for Meet Sammy requires a Roblox executor. Follow these steps to activate powerful 
+            automation features and dominate the experience on both PC and Mobile.
+          </p>
+
+          <ol class="small" style="padding-left:20px;">
+            <li style="margin-bottom:8px;"><strong>Download Executor:</strong> Get Delta, Synapse X, KRNL, or Fluxus. Mobile: Delta iOS, Codex iOS, Fluxus Android. Disable antivirus if blocked.</li>
+            <li style="margin-bottom:8px;"><strong>Install & Setup:</strong> Complete installation and unlock with key if needed.</li>
+            <li style="margin-bottom:8px;"><strong>Launch Game:</strong> Open Roblox and join Meet Sammy experience.</li>
+            <li style="margin-bottom:8px;"><strong>Inject Executor:</strong> Click "Inject" or "Attach" to connect the executor.</li>
+            <li style="margin-bottom:8px;"><strong>Copy Script:</strong> Use the "Copy Script" button on any script above.</li>
+            <li style="margin-bottom:8px;"><strong>Execute:</strong> Paste script into executor and click "Execute" to activate instantly.</li>
+          </ol>
+
+          <div class="warning-box" style="margin-top:12px;">
+            ⚠️ Always test scripts in private servers first. Using scripts in public servers increases detection risk and may result in temporary bans.
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px;">
+          <h3>Why Players Use These Scripts</h3>
+          
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#FF3333;">Complete Challenges Faster</strong><br>
+            Scripts automate repetitive tasks like collecting items, completing challenges, and winning rounds. What takes 
+            hours manually can be done in minutes with automation.
+          </p>
+
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#FF3333;">Competitive Advantage</strong><br>
+            Gain an edge with features like Auto Win and Auto Farm to complete challenges faster and collect more rewards 
+            than manual players.
+          </p>
+
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#FF3333;">Enhanced Gameplay</strong><br>
+            Focus on fun and enjoyment rather than grinding. Scripts handle boring tasks automatically while you 
+            experience the best parts of Meet Sammy.
+          </p>
+
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#FF3333;">Mobile Compatible</strong><br>
+            Both scripts work perfectly on mobile devices. Use mobile executors to get the same powerful features on 
+            iOS and Android devices.
+          </p>
+        </div>
+
+        <div class="card" style="margin-top:16px;">
+          <h3>Frequently Asked Questions</h3>
+          
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#FF3333;">Q: Are Meet Sammy scripts safe to use?</strong><br>
+            Scripts from trusted sources are generally safe, but any script usage carries account risk. Always test in 
+            private servers and use scripts with anti-ban protection when available.
+          </p>
+
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#FF3333;">Q: Do I need keys for these scripts?</strong><br>
+            Script 1 (Auto Farm) has a key system for security. Script 2 (Auto Win) is keyless for instant access. 
+            Both scripts are easy to use and work great.
+          </p>
+
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#FF3333;">Q: Can I use scripts on mobile?</strong><br>
+            Yes! Both scripts are mobile-compatible. Use mobile executors like Delta iOS, Codex iOS, or Fluxus Android 
+            for iOS and Android devices.
+          </p>
+
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#FF3333;">Q: Which script is best for farming?</strong><br>
+            Script 1 (Auto Farm with Key System) is specifically designed for farming with advanced auto-collection 
+            features. It's the best choice for collecting items and rewards.
+          </p>
+
+          <p class="small" style="margin-top:12px;">
+            <strong style="color:#FF3333;">Q: How do I avoid getting banned?</strong><br>
+            Test in private servers, use scripts with bypass features, avoid excessive automation in public servers, 
+            and don't use scripts 24/7. Moderate usage is key to staying undetected.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Meet Sammy Community — scripts shared by players. Not affiliated with Roblox.</p>
+  </footer>
+
+  <div id="toast" role="status" aria-live="polite">Copied!</div>
+
+  <script>
+    (function(){
+      const toast = document.getElementById('toast');
+
+      function showToast(msg='Copied!') {
+        toast.textContent = msg;
+        toast.style.display = 'block';
+        toast.style.opacity = '1';
+        clearTimeout(window._toastTimer);
+        window._toastTimer = setTimeout(()=>{
+          toast.style.opacity = '0';
+          setTimeout(()=> toast.style.display = 'none', 300);
+        }, 1600);
+      }
+
+      document.querySelectorAll('.btn-copy').forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          const targetId = btn.getAttribute('data-target');
+          const el = document.getElementById(targetId);
+          if(!el) return;
+          const text = el.textContent || el.innerText || '';
+          if(navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(()=>{
+              showToast('Script copied to clipboard');
+              const old = btn.textContent;
+              btn.textContent = 'Copied!';
+              setTimeout(()=> btn.textContent = old, 1200);
+            }).catch(()=> fallbackCopy(text));
+          } else {
+            fallbackCopy(text);
+          }
+
+          function fallbackCopy(txt){
+            const ta = document.createElement('textarea');
+            ta.value = txt;
+            document.body.appendChild(ta);
+            ta.select();
+            try {
+              document.execCommand('copy');
+              showToast('Script copied to clipboard');
+            } catch(e) {
+              showToast('Copy failed — select manually');
+            }
+            document.body.removeChild(ta);
+          }
+        });
+      });
+
+      document.querySelectorAll('.btn-download').forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          const targetId = btn.getAttribute('data-target');
+          const filename = btn.getAttribute('data-filename') || 'script.lua';
+          const el = document.getElementById(targetId);
+          if(!el) return;
+          const text = el.textContent || el.innerText || '';
+          const blob = new Blob([text], {type: 'text/plain;charset=utf-8'});
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = filename;
+          document.body.appendChild(a);
+          a.click();
+          setTimeout(()=>{
+            URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+          }, 250);
+          showToast('Download started: ' + filename);
+        });
+      });
+
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* === GENERAL === */
+body {
+  margin: 0;
+  font-family: 'Arial Black', Arial, sans-serif;
+  background: linear-gradient(135deg, #87CEEB 0%, #e0f6ff 100%); /* Bright sky blue background */
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* === HEADER === */
+header {
+  background: linear-gradient(135deg, #FF3333 0%, #FF6666 100%);
+  padding: 25px 10px;
+  border-bottom: 6px solid #CC0000;
+  box-shadow: 0 4px 15px rgba(255, 51, 51, 0.4);
+}
+
+header h1 {
+  font-size: 2.7rem;
+  color: #FFFF00;
+  text-shadow: 3px 3px 0px #CC0000, 0 0 20px rgba(255, 255, 0, 0.6);
+  margin: 0;
+}
+
+header h2 {
+  margin-top: 5px;
+  font-size: 1.3rem;
+  color: #FFF8DC;
+  text-shadow: 2px 2px 0px #CC0000;
+}
+
+/* === INTRO SECTION === */
+.intro {
+  padding: 20px;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: auto;
+  color: #2c3e50;
+}
+
+.highlight {
+  color: #FF3333;
+  font-weight: bold;
+  text-shadow: 2px 2px 0px rgba(255, 255, 0, 0.3);
+}
+
+/* === BUTTONS === */
+.button-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game-btn {
+  background: linear-gradient(135deg, #FF3333 0%, #FF6666 100%);
+  color: #FFFF00;
+  padding: 15px 20px;
+  font-size: 1.3rem;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 4px solid #CC0000;
+  box-shadow: 4px 4px 0px #990000;
+  transition: 0.2s;
+  text-shadow: 2px 2px 0px #CC0000;
+  font-weight: 900;
+}
+
+.game-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 6px 6px 0px #990000, 0 0 15px rgba(255, 51, 51, 0.5);
+}
+
+.game-btn:active {
+  transform: scale(0.95);
+}
+
+/* Alternate button style */
+.game-btn.alt {
+  background: linear-gradient(135deg, #FFFF00 0%, #FFEB3B 100%);
+  border-color: #FFC107;
+  box-shadow: 4px 4px 0px #FF9800;
+  color: #CC0000;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+}
+
+.game-btn.alt:hover {
+  box-shadow: 6px 6px 0px #FF9800, 0 0 15px rgba(255, 255, 0, 0.5);
+}
+
+/* === FOOTER === */
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  background: linear-gradient(135deg, #FF3333 0%, #FF6666 100%);
+  border-top: 6px solid #CC0000;
+  font-size: 0.9rem;
+  color: #FFF8DC;
+}
+
+/* === MOBILE FRIENDLY === */
+@media (min-width: 600px) {
+  .button-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
